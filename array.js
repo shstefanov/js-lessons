@@ -1,22 +1,21 @@
+// Declare empty array
+var empty_array = [];
 
-// Example:
-// node kvadranti.js 5 6
+// Declare numeric array
+var other_array  = [ 5, 6, 7, 8, 9 ]; //3
+                  // 0, 1, 2
+// Array properties
+// array.length = number, represents
+// number of elements in the array
 
-var x = parseInt(process.argv[2]);
-var y = parseInt(process.argv[3]);
+// Array length
+var array_length = other_array.length;
 
-if( x >= 0 && y >= 0 ){
-  console.log("Квадрант 1", x, y);
-}
-
-else if( x < 0 && y >= 0 ){
-  console.log("Квадрант 2", x, y);
-}
-
-else if( x < 0 && y < 0 ){
-  console.log("Квадрант 3", x, y);
-}
-
-else if( x >= 0 && y < 0 ){
-  console.log("Квадрант 4");
+for( var i = 0; i < array_length; i++ ){
+  // Get single element from the array
+  // i - the position
+  // other_array[ i ] - get the value at given position
+  // First position is 0
+  var element = other_array[i];
+  console.log(i, element);
 }
