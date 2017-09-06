@@ -110,6 +110,10 @@ function is_even_number(n){
   return result;
 }
 
+// When called, D.filter uses the function to check
+// every value in the array. If returned value is true,
+// filter keeps te value in the result array.
+// Otherwise the value is omitted
 var E = D.filter(is_even_number);
 // [2, 4]
 console.log(E);
